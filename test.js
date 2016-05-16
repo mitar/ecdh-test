@@ -24,7 +24,7 @@ function generateKey() {
       crypto.subtle.importKey('spki', exportedKeys[PUBLIC_KEY], {
         name: 'ECDH',
         namedCurve: 'P-256'
-      }, true, [])
+      }, false, [])
     ]);
   });
 }
